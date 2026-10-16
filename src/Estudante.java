@@ -4,6 +4,10 @@ public class Estudante{
     private String numeroEstudante;
     private String curso;
 
+    public Estudante() {
+    }
+
+
     public Estudante(String nome, String numeroEstudante, String curso){
         this.nome = nome;
         this.numeroEstudante = numeroEstudante;
@@ -30,13 +34,16 @@ public class Estudante{
         return curso;
     }
 
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Estudante{" +
+                "nome='" + nome + '\'' +
+                ", numeroEstudante='" + numeroEstudante + '\'' +
+                ", curso='" + curso + '\'' +
+                '}';
+    }
+
     public void setCurso(String curso) {
         this.curso = curso;
     }
-
-    @Override
-    public String toString() {
-        return "Estudante [nome=" + nome + ", numeroEstudante=" + numeroEstudante + ", curso=" + curso + "]";
-    }
-    
 }
